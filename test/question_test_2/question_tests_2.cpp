@@ -10,3 +10,14 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+#include "catch.hpp"
+#include "question2.h"
+
+TEST_CASE("Test is_palindrome function")
+{
+    REQUIRE(is_palindrome("abcba") == true);
+    REQUIRE(is_palindrome("abc") == false);
+    REQUIRE(is_palindrome("hannah") == true);
+    REQUIRE(is_palindrome("hanna") == false);
+}
